@@ -1,0 +1,7 @@
+1. This project is scaffolded by 'vite'
+
+2. 'tailwind-merge' and 'clsx' nmp package used to resolve tailwind css dynamic class conflicts
+
+3. 'Context API' is used to maintain state and passing data through components
+
+4. 'npm run dev' command is needed to run the project locally
