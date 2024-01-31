@@ -50,11 +50,11 @@ const App = () => {
   };
 
   // FILTER BY STATUS
-  const [status, setStatus] = useState({
+  const  status  = {
     toDo: "To Do",
     inProgress: "In Progress",
     done: "Done",
-  });
+  };
   const [filterStatus, setFilterStatus] = useState("All");
   const onFilterValueChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setFilterStatus(e.target.value);

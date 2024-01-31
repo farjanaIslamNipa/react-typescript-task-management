@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { createContext, useContext } from "react";
+import {TTask} from "../type";
 
 export const TodoContext = createContext({
   toDos: [
@@ -10,11 +12,10 @@ export const TodoContext = createContext({
       completed: false
     }
   ],
-  addTodo: (toDo) => {},
-  updateTodo: (id, toDo) => {},
-  updateTodoStatus: (id, status) => {},
-  deleteTodo: (id) => {},
-  toggleComplete: (id) => {},
+  addTodo: (_toDo : TTask) => {},
+  updateTodo: (_id : string, _toDo : Partial<TTask>) => {},
+  deleteTodo: (_id: string) => {},
+  toggleComplete: (_id: string) => {},
   status: {
     toDo: '',
     inProgress: '',
