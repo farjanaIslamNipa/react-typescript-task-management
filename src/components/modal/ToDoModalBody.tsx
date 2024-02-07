@@ -20,6 +20,7 @@ const ToDoModalContent = () => {
     e.preventDefault();
     if (!toDo) return;
     const todoData = {
+      id: String(Date.now()),
       name: toDo?.name,
       priority: toDo?.priority ? toDo.priority : "low",
       status: "To Do",

@@ -10,7 +10,7 @@ const App = () => {
   const [toDos, setToDos] = useState<TTask[]>([]);
 
   const addTodo = (toDo: any) => {
-    setToDos((prev) => [{ id: Date.now(), ...toDo }, ...prev]);
+    setToDos((prev) => [{...toDo }, ...prev]);
   };
 
   const updateTodo = (id: string, toDo: any) => {
